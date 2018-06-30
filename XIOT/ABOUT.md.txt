@@ -1,0 +1,16 @@
+Through my code I tried to accomplish the task so my code begin with the Main functions where i begin to Set 
+1- Timer 
+2- GPIO
+3- ADC 
+
+First thing I do is to control the led state depending on the switch then I added the Sensor Part. 
+I used the timer interrupt to calculate the rate specified.
+
+For Serial i connect Virtual Terminal to UART pins and send the data to it through Print Function which calles every 3 seconds to calculate Temperature and send it
+yo serial 
+
+I have a problem the the 2 interrupts are conflicted so i define " Enter_Critical_Section_Area " in the beginning of each interrupt 
+which disable ell interrupts untill this interrupt is done and "Exit_Critical_Section_Area " to resume the Code
+
+Coding Experience (PIC) : 6 months  
+ 
